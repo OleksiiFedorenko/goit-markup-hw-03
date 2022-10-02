@@ -1,0 +1,222 @@
+:root {
+  --primary-text-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --accent-active-color: #188ce8;
+  --white-color: #fff;
+  --black-color: #000;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+  --bgn-grey-color: #f5f4fa;
+  --bgn-darkgrey-color: #2f303a;
+}
+
+/* general */
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
+    'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'noto', 'arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* header and footer */
+
+.logo {
+  font-family: 'Raleway', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
+    'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'roboto', 'noto', 'arial', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.header .logo {
+  color: var(--black-color);
+}
+
+.footer .logo {
+  color: var(--white-color);
+}
+
+.logo.accent {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link.current,
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.header .contact {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.footer .contact {
+  color: var(--contacts-color);
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.address {
+  color: var(--white-color);
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--bgn-darkgrey-color);
+}
+
+/* studio */
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.hero {
+  background-color: var(--bgn-darkgrey-color);
+}
+
+.section-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  /* text-align: center; */
+}
+
+.title {
+  color: var(--title-color);
+}
+
+.benefits .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits .text {
+  line-height: 1.71;
+}
+
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+
+.team .text {
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+
+.team-card {
+  background-color: var(--white-color);
+}
+
+.team {
+  background-color: var(--bgn-grey-color);
+}
+
+/* porfolio */
+
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* buttons */
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  /* display: flex;
+  align-items: center; */
+}
+
+.button.primary:hover,
+.button.primary:focus,
+.button.primary:active {
+  background-color: var(--accent-active-color);
+}
+
+.button.secondary {
+  background-color: var(--bgn-grey-color);
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.button.secondary:hover,
+.button.secondary:focus,
+.button.secondary:active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
