@@ -29,7 +29,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid teal;
+  outline: 1px solid teal;
 }
 
 .header,
@@ -39,7 +39,7 @@ body {
 .team,
 .portfolio,
 .footer {
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -67,6 +67,46 @@ p {
 
 /* header and footer */
 
+/* positioning */
+
+.main-nav {
+  display: flex;
+  /* align-items: center; */
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  outline: 1px solid tomato;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-top {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-top .item {
+  outline: 1px solid tomato;
+}
+
+.contacts-top .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* styling */
+
 .logo {
   font-family: 'Raleway', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
     'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'roboto', 'noto', 'arial', sans-serif;
@@ -77,6 +117,7 @@ p {
 }
 
 .header .logo {
+  margin-right: 93px;
   color: var(--black-color);
 }
 
@@ -84,11 +125,15 @@ p {
   color: var(--white-color);
 }
 
-.logo.accent {
+.accent {
   color: var(--accent-color);
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.14;
@@ -103,6 +148,10 @@ p {
 }
 
 .header .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
