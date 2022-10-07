@@ -18,30 +18,32 @@
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
-        <nav class="left-nav">
-          <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
+      <div class="header-border">
+        <div class="container main-nav">
+          <nav class="left-nav">
+            <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
 
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <ul class="site-nav list">
+              <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+              <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+              <li class="item"><a href="" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <ul class="contacts-top list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+            </li>
+            <li class="item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
           </ul>
-        </nav>
-
-        <ul class="contacts-top list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
-          </li>
-          <li class="item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button primary">Замовити послугу</button>
         </div>
       </section>
@@ -49,24 +51,24 @@
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Чому ми?</h2>
-          <ul class="list">
-            <li>
+          <ul class="benefits-list list">
+            <li class="item">
               <h3 class="title">Увага до деталей</h3>
               <p class="text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальність</h3>
               <p class="text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планування</h3>
               <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Сучасні технології</h3>
               <p class="text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -79,12 +81,14 @@
       <section class="doings">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="doings-list list">
             <li>
               <a href="">
                 <img
+                  class="image"
                   src="./images/work-1.jpg"
-                  alt="Людина друкує текст з клавіатури на планшеті на робочому місці"
+                  alt="Людина друкує текст з клавіатури
+                на планшеті на робочому місці"
                   width="370"
                 />
               </a>
@@ -92,8 +96,10 @@
             <li>
               <a href="">
                 <img
+                  class="image"
                   src="./images/work-2.jpg"
-                  alt="Людина однією рукою тримає смартфон, іншу тримає на тачпаді ноутбука, поруч монітор"
+                  alt="Людина однією рукою тримає
+                смартфон, іншу тримає на тачпаді ноутбука, поруч монітор"
                   width="370"
                 />
               </a>
@@ -101,8 +107,10 @@
             <li>
               <a href="">
                 <img
+                  class="image"
                   src="./images/work-3.jpg"
-                  alt="Людина трмає планшет, на фоні робоче місце: монітор, клавіатура, мишка"
+                  alt="Людина трмає планшет, на фоні
+                робоче місце: монітор, клавіатура, мишка"
                   width="370"
                 />
               </a>
@@ -114,24 +122,44 @@
       <section class="team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li class="team-card">
-              <img src="./images/worker-1.jpg" alt="Чоловік в окулярах посміхається" width="260" />
+              <img
+                class="image"
+                src="./images/worker-1.jpg"
+                alt="Чоловік в окулярах посміхається"
+                width="270"
+              />
               <h3 class="title">Ігор Дем'яненко</h3>
               <p lang="en" class="text">Product Designer</p>
             </li>
             <li class="team-card">
-              <img src="./images/worker-2.jpg" alt="Жінка в окулярах посміхається" width="260" />
+              <img
+                class="image"
+                src="./images/worker-2.jpg"
+                alt="Жінка в окулярах посміхається"
+                width="270"
+              />
               <h3 class="title">Ольга Рєпіна</h3>
               <p lang="en" class="text">Frontend Developer</p>
             </li>
             <li class="team-card">
-              <img src="./images/worker-3.jpg" alt="Чоловік посміхається" width="260" />
+              <img
+                class="image"
+                src="./images/worker-3.jpg"
+                alt="Чоловік посміхається"
+                width="270"
+              />
               <h3 class="title">Микола Тарасов</h3>
               <p lang="en" class="text">Marketing</p>
             </li>
             <li class="team-card">
-              <img src="./images/worker-4.jpg" alt="Чоловік в окулярах посміхається" width="260" />
+              <img
+                class="image"
+                src="./images/worker-4.jpg"
+                alt="Чоловік в окулярах посміхається"
+                width="270"
+              />
               <h3 class="title">Михайло Єрмаков</h3>
               <p lang="en" class="text">UI Designer</p>
             </li>
@@ -144,9 +172,9 @@
       <div class="container">
         <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
 
-        <address class="contacts-bottom">
-          <ul class="list">
-            <li>
+        <address class="contacts">
+          <ul class="contacts-bottom list">
+            <li class="item">
               <a
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
@@ -155,8 +183,10 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+            </li>
+            <li class="item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
