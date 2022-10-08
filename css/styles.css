@@ -5,7 +5,7 @@
   --accent-active-color: #188ce8;
   --white-color: #fff;
   --black-color: #000;
-  --contacts-color: rgba(255, 255, 255, 0.6);
+  --contacts-color: rgb(255 255 255 / 0.6);
   --header-border-color: #ececec;
   --portfolio-border-color: #eee;
   --bgn-grey-color: #f5f4fa;
@@ -15,14 +15,14 @@
 /* general */
 
 body {
-  background-color: var(--white-color);
-
   color: var(--primary-text-color);
   font-family: 'Roboto', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
     'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'noto', 'arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  background-color: var(--white-color);
 }
 
 .container {
@@ -149,6 +149,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: var(--bgn-darkgrey-color);
 }
 
@@ -205,9 +206,10 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--bgn-darkgrey-color);
 
   text-align: center;
+
+  background-color: var(--bgn-darkgrey-color);
 }
 
 .hero-title {
@@ -264,9 +266,9 @@ img {
 /* team */
 
 .team {
-  background-color: var(--bgn-grey-color);
-
   text-align: center;
+
+  background-color: var(--bgn-grey-color);
 }
 
 .team-list {
@@ -279,11 +281,11 @@ img {
 
 .team-card {
   padding-bottom: 30px;
-  background-color: var(--white-color);
 
+  background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 0.12), 0px 1px 1px rgb(0 0 0 / 0.14),
+    0px 2px 1px rgb(0 0 0 / 0.2);
 }
 
 .team .image {
@@ -360,14 +362,15 @@ img {
 
 .button.primary {
   padding: 10px 32px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 0.15);
 }
 
 .button.primary:hover,
@@ -377,23 +380,24 @@ img {
 }
 
 .button.secondary {
-  padding: 6px 22px;
   min-width: 73px;
-  background-color: var(--bgn-grey-color);
+  padding: 6px 22px;
 
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+  background-color: var(--bgn-grey-color);
 }
 
 .button.secondary:hover,
 .button.secondary:focus,
 .button.secondary:active {
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
   color: var(--white-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.08),
+    0px 2px 2px rgb(0 0 0/ 0.12);
+  border-radius: 4px;
 }
